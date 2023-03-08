@@ -183,8 +183,8 @@ if selected == "Prediction":
         
         
                     #loading the saved models
-        
-                    prostate_cancer_model = pickle.load(open('D:\\Cancer Websites\\Cancer-prediction-using-machine-learning-main\\trained_model_prost.sav','rb'))
+                    file1 = open("/trained_model_prost.sav",'rb')
+                    prostate_cancer_model = pickle.load(file1)
         
                     lung_cancer_model = pickle.load(open('D:\\Cancer Websites\\Cancer-prediction-using-machine-learning-main\\model_lung.sav','rb'))
         
