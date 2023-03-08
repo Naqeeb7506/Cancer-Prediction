@@ -180,10 +180,12 @@ if selected == "Prediction":
                     import pickle
                     import streamlit as st
                     from streamlit_option_menu import option_menu
+                        
         
         
                     #loading the saved models
-                    prostate_cancer_model = pickle.load(open('D:\\Cancer Websites\\Cancer-prediction-using-machine-learning-main\\trained_model_prost.sav','rb'))
+                    filename = 'D:\\Cancer Websites\\Cancer-prediction-using-machine-learning-main\\trained_model_prost.sav'
+                    prostate_cancer_model = pickle.load(open(filename,'rb'))
         
                     lung_cancer_model = pickle.load(open('D:\\Cancer Websites\\Cancer-prediction-using-machine-learning-main\\model_lung.sav','rb'))
         
